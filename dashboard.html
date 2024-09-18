@@ -23,34 +23,33 @@
     .navbar-custom {
       background-color: #007bff;
       margin: 0 auto;
-      width: calc(100% - 570px); /* Add side margins to navbar */
+      width: calc(100% - 570px); /* Changed from calc(100% - 570px) to full width */
       border-radius: 5px;
       position: relative;
-      padding: 10px 20px; /* Added padding for spacing */
+      padding: 10px 20px;
     }
 
     /* Notification Icon */
     .notification-icon {
       position: absolute;
-      top: 55%; /* Vertically center */
+      top: 50%;
       left: 10px;
-      transform: translateY(-50%); /* Adjust vertical centering */
+      transform: translateY(-50%);
       font-size: 20px;
       color: white;
-      margin-right: 20px;
     }
 
     /* Main Content */
     .main-content {
-      padding-top: 20px; /* Reduced spacing between navbar and cards to 20px */
-      width: calc(100% - 600px); /* Apply the same margin */
+      padding-top: 20px;
+      width: calc(100% - 600px);
       margin: 0 auto;
     }
 
-    /* Custom Cards (smaller size) */
+    /* Custom Cards */
     .card-custom {
-      width: 300px; /* Smaller fixed width */
-      height: 200px; /* Adjust height to fit dropdown */
+      width: 300px;
+      height: 200px;
       margin-bottom: 20px;
       border-radius: 15px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -66,25 +65,6 @@
       display: inline-block;
     }
 
-    /* Circular Progress Indicator (Smaller) */
-    .progress-circle {
-      position: relative;
-      display: inline-block;
-      width: 50px; /* Smaller circle */
-      height: 50px;
-      background: conic-gradient(#007bff 80%, #e5e5e5 80%);
-      border-radius: 50%;
-    }
-
-    .progress-circle span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 12px; /* Smaller text */
-      font-weight: bold;
-    }
-
     /* Styling for text */
     .card-title {
       font-size: 14px;
@@ -92,7 +72,7 @@
     }
 
     .card-balance {
-      font-size: 22px; /* Smaller font for balance */
+      font-size: 22px;
       font-weight: bold;
     }
 
@@ -106,12 +86,12 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 20px; /* Add spacing between cards */
+      gap: 20px;
     }
 
     /* Menu List Section */
     .menu-list {
-      margin-top: 40px; /* Added more margin for spacing */
+      margin-top: 40px;
       padding: 30px;
       background-color: #f8f9fa;
       border-radius: 10px;
@@ -157,7 +137,7 @@
       margin-top: 5px;
     }
 
-    /* Added spacing between the menu list and the bottom navbar */
+    /* Spacing between the menu list and the bottom navbar */
     .menu-list-container {
       margin-bottom: 100px; 
     }
@@ -168,7 +148,7 @@
       color: white;
       height: 80px;
       margin: 0 auto;
-      width: calc(100% - 570px); /* Add side margins */
+      width: calc(100% - 570px); /* Changed from calc(100% - 570px) to full width */
       border-radius: 5px;
     }
 
@@ -183,13 +163,13 @@
 
     /* Icons and spacing for bottom nav */
     .bottom-nav-custom .nav-link ion-icon {
-      font-size: 28px; /* Adjust size of Ionicons */
+      font-size: 28px;
     }
 
     .bottom-nav-custom .nav-link span {
       display: block;
       font-size: 14px;
-      margin-top: 5px; /* Space between icon and label */
+      margin-top: 5px;
     }
 
     /* Custom styling for the user icon in the top navbar */
@@ -205,11 +185,111 @@
       right: 10px;
       top: 50%;
       transform: translateY(-50%);
+      z-index: 10;
     }
 
     .navbar-custom .user-icon ion-icon {
       font-size: 22px;
       color: #007bff;
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 1200px) {
+      /* .main-content {
+        width: calc(100% - 100px);
+      } */
+    }
+
+    @media (max-width: 768px) {
+      .navbar-custom {
+        padding: 10px;
+      }
+
+      .main-content {
+        width: calc(100% - 50px);
+      }
+
+      .bottom-nav-custom {
+        padding: 10px;
+      }
+
+      .menu-item {
+      display: inline-block;
+      width: 70px;
+      height: 90px;
+      text-align: center;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 7px;
+      padding: 8px;
+    }
+
+      .menu-item span {
+      display: block;
+      font-size: 13px;
+      margin-top: 1px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .menu-item ion-icon {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    }
+
+    @media (max-width: 576px) {
+      .navbar-custom {
+        padding: 10px;
+      }
+
+      .main-content {
+        width: 100%;
+        padding: 10px;
+      }
+
+      .bottom-nav-custom {
+        width: 100%;
+        padding: 10px;
+      }
+
+      .card-custom {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .menu-item {
+        width: 50px;
+        height: 60px;
+        margin: 3px;
+      }
+
+      .menu-list {
+        width: 100%;
+      }
+
+      .notification-icon {
+        font-size: 18px;
+      }
+
+      .navbar-custom .user-icon {
+        right: 20px;
+        top: 55%;
+        transform: translateY(-50%);
+      }
+
+      .menu-item span {
+      display: block;
+      font-size: 10px;
+      margin-top: 0px;
+      align-items: center;
+    }
+
+    .menu-item ion-icon {
+      font-size: 18px;
+      margin-bottom: 1px;
+    }
     }
   </style>
 </head>
@@ -229,7 +309,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <!-- User Icon (iOS-specific Ionicon) -->
+              <!-- User Icon -->
               <div class="user-icon">
                 <ion-icon name="person-circle-outline"></ion-icon>
               </div>
@@ -290,7 +370,7 @@
       </div>
     </div>
 
-    <!-- Menu List Section (below the cards) -->
+    <!-- Menu List Section -->
     <div class="menu-list-container">
       <div class="menu-list">
         <div class="menu-list-header">
@@ -335,21 +415,18 @@
     </div>
   </div>
 
-  <!-- Bottom Navigation with Correct Margins -->
+  <!-- Bottom Navigation -->
   <nav class="navbar navbar-dark bottom-nav-custom fixed-bottom">
     <div class="d-flex justify-content-around w-100">
       <a class="nav-link" href="#">
-        <!-- Home Icon (iOS-specific Ionicon) -->
         <ion-icon name="home-outline"></ion-icon>
         <span>Home</span>
       </a>
       <a class="nav-link" href="#">
-        <!-- Earn Icon (Lightning iOS-specific Ionicon) -->
         <ion-icon name="flash-outline"></ion-icon>
         <span>Earn</span>
       </a>
       <a class="nav-link" href="history.html">
-        <!-- History Icon (Book iOS-specific Ionicon) -->
         <ion-icon name="book-outline"></ion-icon>
         <span>History</span>
       </a>
