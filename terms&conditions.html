@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions</title>
+
+  <!-- Ionic CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+  <!-- Ionic JS -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+  <!-- Custom CSS for responsiveness -->
+  <style>
+  body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Header with restricted width and centered */
+    ion-header {
+      --background: #000;
+      --color: white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    ion-toolbar {
+      --background: #000;
+      --color: white;
+      /* width: 95%;
+      max-width: 900px;  */
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    ion-title {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    ion-buttons {
+      position: absolute;
+      left: 10px;
+    }
+
+    ion-content {
+      --background: #f2f2f2;
+      padding: 15px;
+    }
+
+    .terms-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+    }
+
+    .terms-content h3 {
+      text-align: center;
+    }
+
+    .terms-content p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .terms-content {
+        padding: 15px;
+      }
+
+      .terms-content h3 {
+        font-size: 18px;
+      }
+
+      .terms-content p {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .terms-content {
+        padding: 10px;
+      }
+
+      .terms-content h3 {
+        font-size: 16px;
+      }
+
+      .terms-content p {
+        font-size: 12px;
+      }
+    }
+  </style>
+
+  <!-- Script to enable back button -->
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Ionic Header (Toolbar) -->
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button onclick="goBack()">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Term & Condition</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Ionic Content -->
+  <ion-content>
+    <div class="terms-content">
+      <!-- <h3>Term & Condition</h3> -->
+      <p>1) To optimize and reset your account, you must first complete all ratings with a minimum amount of USD 50 and a minimum account reset amount of USD 100.</p>
+      <p>1.1) Users who have completed a set of tasks should contact customer service to request a reset for the next set of tasks.</p>
+      <p>2) User withdrawals and system withdrawal requirements / security of user funds</p>
+      <p>2.1) Each user needs to complete all the optimization tasks before they can meet the system withdrawal requirements.</p>
+      <p>2.2) In order to avoid any loss of funds, all withdrawals are processed automatically by the system and not manually.</p>
+      <p>2.3) All users are not allowed to apply for withdrawal in the middle of a task to avoid affecting the merchant's operation.</p>
+      <p>2.4) Users' funds are completely safe on the platform and the platform will be liable for any accidental loss.</p>
+      <p>3) Please do not disclose your account password and withdrawal password to others. The platform will not be held responsible for any loss or damage caused.</p>
+      <p>3.1) All users are advised to keep their accounts secure to avoid disclosure.</p>
+      <p>3.2) The platform is not responsible for any accidental disclosure of accounts.</p>
+      <p>3.3) Because of the financial implications of the accounts, it is important not to disclose them to avoid unnecessary problems.</p>
+      <p>3.4) Withdrawal password: It is recommended that you do not set a birthday password, ID card number or mobile phone number, etc. It is recommended that you set a more difficult password to protect your funds.</p>
+      <p>3.5) If you forget your password, you can reset it by contacting the online service and be sure to change it yourself afterwards.</p>
+      <p>4) Optimization ratings are randomly assigned by the system and therefore cannot be changed, canceled, controlled, or skipped in any way.</p>
+      <p>4.1) Due to the large number of users on the platform, it is not possible to distribute combination products manually, so all task product data are distributed randomly by the system.</p>
+      <p>4.2) Combination products are randomly released by the system and cannot be changed/cancelled/skipped by any user/staff.</p>
+      <p>5) Legal action will be taken in the event of misuse of the account.</p>
+      <p>6) Each product data comes from a different merchant, no deposit for more than 10 minutes, and each deposit must be made with the online service to confirm the merchant's deposit detail.</p>
+      <p>7) The platform will not be held responsible for any deposits made to the wrong detail.</p>
+      <p>8) Each time the product data is optimized, the user must complete it within 24 hours. If it is not completed and the merchant is not notified to apply for an extension, resulting in complaints from the merchant, the user will be responsible for breach of contract and may have his or her credit score deducted.</p>
+    </div>
+  </ion-content>
+
+</body>
+</html>
