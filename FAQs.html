@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs</title>
+
+  <!-- Ionic CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+  <!-- Ionic JS -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+  <!-- Custom CSS to style header and layout similar to your image -->
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Header with restricted width and centered */
+    ion-header {
+      --background: #000;
+      --color: white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    ion-toolbar {
+      --background: #000;
+      --color: white;
+      /* width: 95%;
+      max-width: 900px; Limit maximum width */
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    ion-title {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    ion-buttons {
+      position: absolute;
+      left: 10px;
+    }
+
+    ion-content {
+      --background: #f7efef00;
+      padding: 15px;
+    }
+
+    .faq-content {
+      background-color: #bbb9b9d5;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: 0 auto 30px auto;
+    }
+
+    .faq-content h3 {
+      text-align: center;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .faq-content p {
+      font-size: 14px;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .faq-content ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .faq-content li {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .faq-content {
+        padding: 15px;
+      }
+
+      .faq-content h3 {
+        font-size: 18px;
+      }
+
+      .faq-content p,
+      .faq-content li {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ionic Header (Toolbar) with centered title and black background -->
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button onclick="window.history.back()">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>FAQs</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Ionic Content -->
+  <ion-content>
+
+    <!-- FAQs Content Section -->
+    <div class="faq-content">
+      <!-- <h3>FAQs</h3> -->
+      <ul>
+        <!-- Existing FAQs -->
+        <li>I. Start Product Optimization Task</li>
+        <li>1.1) Minimum account balance of 50 USD for the first 40 tasks/set.</li>
+        <li>1.2) A minimum renewal of 100 USD is required to start the new tasks.</li>
+        <li>1.3) Users need to complete all tasks for the day before requesting a withdrawal.</li>
+        <br>
+        <li>II. Withdrawal</li>
+        <li>2.1) Users need to complete all tasks for the day before requesting a withdrawal.</li>
+        <li>2.2) You cannot request a withdrawal or refund if you choose to give up or withdraw in the middle of a task optimization.</li>
+        <li>2.3) No withdrawals can be processed if the user's withdrawal request has not been received.</li>
+        <li>2.4) The maximum withdrawal amount for VIP1 users is US$10,000, for VIP2 users it is US$20,000, and for VIP3 users it is US$50,000.</li>
+        <li>2.5) The user account has insufficient reputation score and cannot use all functions of the platform normally.</li>
+        <br>
+        <li>III. Funds</li>
+        <li>3.1) All funds will be held securely in the user's account and can be requested in full once all data has been completed.</li>
+        <li>3.2) To avoid any loss of funds, all data will be processed by the system and not manually.</li>
+        <li>3.3) The platform will take full responsibility for any accidental loss of funds.</li>
+        <br>
+        <li>IV. Account Security</li>
+        <li>4.1) Please do not disclose your login password and withdrawal password to others.</li>
+        <li>4.2) Users are not recommended to set their birthday password, ID card number, or mobile phone number as their withdrawal password.</li>
+        <li>4.3) If you forget your login password or withdrawal password, please contact our online service to reset it.</li>
+        <br>
+        <li>V. General Product Data</li>
+        <li>5.1) Platform profit is categorized into normal product data profit and 10 times combination product data profit.</li>
+        <li>5.2) Normal users will earn 0.5% of the profit for each normal task of optimizing.</li>
+        <li>5.3) VIP2 users will earn 1% of the profit for each normal task of optimizing.</li>
+        <br>
+        <li>VI. Combined Product Data</li>
+        <li>6.1) Combined Product Data is composed of 0 to 3 data, and the system will randomly allocate the combined data to users.</li>
+        <li>6.2) Users will receive 10 times the profit for each combined data than for the normal product data.</li>
+        <li>6.3) After receiving the combined product data, profits will stop rolling once all product data is completed.</li>
+        <li>6.4) The system will randomly allocate combined data based on the total balance in the user’s account.</li>
+        <li>6.5) Once allocated, combined product data cannot be canceled or skipped.</li>
+        <br>
+        <li>VII. Deposit</li>
+        <li>7.1) The deposit amount is the user’s choice, but it’s recommended the user deposits enough to proceed smoothly.</li>
+        <li>7.2) Deposits should be made according to the insufficient amount shown in the account.</li>
+        <li>7.3) Deposits must be confirmed by the online service before proceeding.</li>
+        <li>7.4) The platform is not responsible for wrong deposit details provided by the user.</li>
+        <br>
+        <li>VIII. Merchant Cooperation</li>
+        <li>8.1) Different merchants on the platform will handle product optimization tasks. If the user does not complete tasks, it will affect merchant progress.</li>
+        <li>8.2) Merchants will provide deposit details for users to make deposits for specific product optimizations.</li>
+        <li>8.3) Delays in optimization will affect merchants, and complaints can be raised against users if delays occur.</li>
+        <br>
+        <li>IX. Invitation</li>
+        <li>9.1) Users can invite others to the platform using their invitation code.</li>
+        <li>9.2) Users cannot invite others unless they have completed all data tasks.</li>
+        <li>9.3) Referrers will receive 20% of the referee’s total earnings for the day.</li>
+        <br>
+        <li>X. Operating Hours</li>
+        <li>10.1) Platform operating hours are from 10:00 am to 22:59 pm (NYT).</li>
+        <li>10.2) Online service operating hours are from 10:00 am to 22:59 pm (NYT).</li>
+        <li>10.3) Withdrawal processing times are from 10:00 am to 22:59 pm (NYT).</li>
+      </ul>
+    </div>
+
+  </ion-content>
+
+</body>
+</html>

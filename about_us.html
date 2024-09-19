@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+
+  <!-- Ionic CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+  <!-- Ionic JS -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+  <!-- Custom CSS for consistent layout -->
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Header similar to other pages */
+    ion-header {
+      --background: #000;
+      --color: white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    ion-toolbar {
+      --background: #000;
+      --color: white;
+      /* width: 95%;
+      max-width: 900px; */
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    ion-title {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    ion-buttons {
+      position: absolute;
+      left: 10px;
+    }
+
+    ion-content {
+      --background: #f7efef00;
+      padding: 15px;
+    }
+
+    .about-content {
+        background-color: #bbb9b9d5;
+        padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: 0 auto 30px auto;
+    }
+
+    .about-content h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .about-content p {
+      font-size: 14px;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .about-content ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .about-content li {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        padding: 15px;
+      }
+
+      .about-content h3 {
+        font-size: 18px;
+      }
+
+      .about-content p,
+      .about-content li {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ionic Header (Toolbar) with centered title and black background -->
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button onclick="window.history.back()">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>About Us</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Ionic Content -->
+  <ion-content>
+
+    <!-- About Us Content Section -->
+    <div class="about-content">
+      <!-- <h3>About Us</h3> -->
+      <p>
+        Welcome to [Your Platform Name], a leading solution for product optimization, financial management, and secure withdrawals. We are committed to offering a seamless and secure experience for users to optimize tasks and manage their finances efficiently.
+      </p>
+      <p>
+        Our platform is designed to cater to users who seek precision and reliability. From offering secure withdrawals, deposits, and comprehensive task management, we aim to be your trusted partner in digital finance.
+      </p>
+
+      <h3>Our Mission</h3>
+      <p>
+        At [Your Platform Name], our mission is to provide an efficient, transparent, and secure platform that helps our users maximize their earning potential through strategic task optimization and careful financial planning. We aim to empower every user to take full control of their financial activities with ease and confidence.
+      </p>
+
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li><strong>Secure Transactions:</strong> Our platform leverages industry-standard security measures to protect your data and funds.</li>
+        <li><strong>Flexible Withdrawal Options:</strong> Enjoy hassle-free withdrawals with multiple methods available to suit your needs.</li>
+        <li><strong>Comprehensive Task Management:</strong> We offer a task optimization system that allows you to manage product data, combined data, and withdrawal requests all in one place.</li>
+        <li><strong>24/7 Support:</strong> Our customer service team is always available to address your concerns and help you with any issues you might encounter.</li>
+      </ul>
+
+      <h3>Our Values</h3>
+      <p>
+        Transparency, innovation, and security are at the core of everything we do. We believe in creating a platform that gives users confidence in managing their financial activities while staying fully in control of their earnings.
+      </p>
+
+      <h3>Join Us</h3>
+      <p>
+        Whether you're looking to optimize your product tasks or manage your finances more effectively, [Your Platform Name] is here to provide you with the tools and support you need. Join thousands of users who trust us as their platform of choice.
+      </p>
+    </div>
+
+  </ion-content>
+
+</body>
+</html>
